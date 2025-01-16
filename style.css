@@ -57,10 +57,13 @@ button {
   cursor: pointer;
   color: #fff;
   font-size: 1rem;
+  transition: 0.2s;
 }
 
 ul li {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   font-size: 1.1rem;
   border-radius: 50%;
@@ -73,8 +76,6 @@ ul li {
 ul li::before {
   content: "";
   position: absolute;
-  height: 30px;
-  width: 30px;
   border-radius: 50%;
   background-image: url(./assets/material-symbols--circle-outline.svg);
   background-repeat: no-repeat;
@@ -88,8 +89,6 @@ ul li.checked {
 }
 
 ul li.checked::before {
-  max-height: 30px;
-  max-width: 30px;
   background-image: url(./assets/carbon--checkmark-outline.svg);
   background-repeat: no-repeat;
 }
@@ -104,8 +103,13 @@ ul li span {
   text-align: center;
   margin-left: auto;
   border-radius: 50%;
+  transition: 0.15s;
 }
 
 ul li span:hover {
   background: #edeef0;
+}
+
+button:hover {
+  opacity: 50%;
 }
