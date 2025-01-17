@@ -79,18 +79,22 @@ ul li::before {
   border-radius: 50%;
   background-image: url(./assets/material-symbols--circle-outline.svg);
   background-repeat: no-repeat;
-  top: 12px;
+  height: 1.4rem;
+  aspect-ratio: 1;
   left: 8px;
 }
 
 ul li.checked {
   color: #555;
+}
+ul li.checked p {
   text-decoration: line-through;
 }
 
 ul li.checked::before {
   background-image: url(./assets/carbon--checkmark-outline.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 ul li span {
   position: relative;
